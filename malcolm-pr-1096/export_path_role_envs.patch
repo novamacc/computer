@@ -1,0 +1,10 @@
+--- a/nginx/lua/nginx_auth_helpers.lua	2026-10-09 13:49:23.403178308 +0000
++++ b/nginx/lua/nginx_auth_helpers.lua	2026-10-09 13:49:23.405392303 +0000
+@@ -200,6 +200,7 @@
+     return path
+ end
+ _M._normalize_uri_for_rbac = normalize_uri_for_rbac  -- exported for unit testing only
++_M._path_role_envs = path_role_envs  -- exported for unit testing only
+ 
+ local role_based_access_enabled = false
+ local keycloak_ssl_verify = false
